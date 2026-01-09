@@ -3,4 +3,5 @@
 vim.lsp.enable({
   "pyright",
   "ccls",
+  "zls"
 })

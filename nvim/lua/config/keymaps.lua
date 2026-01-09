@@ -13,3 +13,13 @@ vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
 vim.keymap.set('n', '<leader>sh', function()
   require("switcher").switch()
 end, { desc = 'Switch between source and header file'})
+
+local saga = require("lspsaga")
+local opts = { noremap = true, silent = true }
+
+vim.keymap.set('n', '<leader>rn', "<cmd>Lspsaga rename<CR>", opts)
+vim.keymap.set('n', '<leader>gt', "<cmd>Lspsaga goto_definition<CR>", opts)
+vim.keymap.set('n', '<leader>pd', "<cmd>Lspsaga peek_definition<CR>", opts)
+vim.keymap.set('n', '<leader>pt', "<cmd>Lspsaga peek_type_definition<CR>", opts)
+vim.keymap.set('n', '<leader>f', "<cmd>Lspsaga finder<CR>", opts)
+
