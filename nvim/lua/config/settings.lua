@@ -10,6 +10,7 @@ vim.opt.mouse = 'a'
 vim.opt.ignorecase = true
 vim.opt.autoread = true
 vim.opt.swapfile = false
+vim.opt.showmode = false
 
 vim.o.background = 'dark'
 vim.cmd([[colorscheme gruvbox]])

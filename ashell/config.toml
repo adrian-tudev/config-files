@@ -1,0 +1,12 @@
+
+
+position = "Top"
+
+
+[modules]
+left = [ "Workspaces" ]
+center = [ "WindowTitle" ]
+right = [["KeyboardLayout", "SystemInfo"], ["Clock", "Privacy", "Settings"] ]
+
+[settings]
+battery_format = "IconAndPercentage"

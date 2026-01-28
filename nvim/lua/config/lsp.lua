@@ -3,5 +3,6 @@
 vim.lsp.enable({
   "pyright",
   "ccls",
-  "zls"
+  "zls",
+  "rust-analyzer"
 })
