@@ -1,12 +1,31 @@
 
-
 position = "Top"
 
-
 [modules]
-left = [ "Workspaces" ]
+left = [ "Workspaces", "Updates" ]
 center = [ "WindowTitle" ]
 right = [["KeyboardLayout", "SystemInfo"], ["Clock", "Privacy", "Settings"] ]
 
-[settings]
-battery_format = "IconAndPercentage"
+[updates]
+check_cmd = "checkupdates; yay -Qua"
+update_cmd = 'alacritty -e bash -c "yay; echo Done - Press enter to exit; read" &'
+
+[appearance]
+
+primary_color = "#83a598"
+success_color = "#b8bb26"
+text_color = "#ebdbb2"
+
+workspace_colors = [ "#83a598", "#b8bb26" ]
+
+[appearance.danger_color]
+base = "#fb4934"
+weak = "#fe8019"
+
+[appearance.background_color]
+base = "#282828"
+weak = "#3c3836"
+strong = "#504945"
+
+[appearance.secondary_color]
+base = "#1d2021"
