@@ -8,7 +8,7 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live gr
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
--- gi stuff
+-- git stuff
 local gitsigns = require('gitsigns')
 vim.keymap.set('n', '<leader>fs', builtin.git_status, { desc = 'Telescope git status' })
 vim.keymap.set('n', '<leader>d', "<cmd>Gitsigns diffthis<CR>", opts)
