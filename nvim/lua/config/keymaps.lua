@@ -10,7 +10,7 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help ta
 
 -- git stuff
 local gitsigns = require('gitsigns')
-vim.keymap.set('n', '<leader>fs', builtin.git_status, { desc = 'Telescope git status' })
+vim.keymap.set('n', '<leader>df', builtin.git_status, { desc = 'Telescope git status' })
 vim.keymap.set('n', '<leader>d', "<cmd>Gitsigns diffthis<CR>", opts)
 
 -- lsp diagnostics

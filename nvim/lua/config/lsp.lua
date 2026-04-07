@@ -1,8 +1,5 @@
-
 -- language servers
 vim.lsp.enable({
-  "pyright",
-  "ccls",
-  "zls",
-  "rust-analyzer"
+  "clangd",
+  "lua_ls",
 })

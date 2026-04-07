@@ -11,6 +11,9 @@ require('config.keymaps')
 -- lsp
 require('config.lsp')
 
+-- diagnostics
+require('config.diagnostics')
+
 -- settings
 require('config.settings')
 

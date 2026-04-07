@@ -12,7 +12,7 @@ vim.opt.autoread = true
 vim.opt.swapfile = false
 vim.opt.showmode = false
 
-vim.o.background = 'dark'
+vim.o.background = 'light'
 vim.cmd([[colorscheme gruvbox]])
 
 vim.api.nvim_create_autocmd("FileType", {
