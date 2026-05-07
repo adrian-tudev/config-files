@@ -16,10 +16,10 @@ if [ -n "$EXTERNAL" ]; then
     # enable all externals
     echo "$MONITORS" | grep '"name"' | cut -d '"' -f4 | while read -r m; do
         if [[ "$m" != "$INTERNAL" ]]; then
-            hyprctl keyword monitor "$m,preferred,auto,1"
+            hyprctl keyword monitor "$m,2560x1440@75,auto,1"
         fi
     done
 else
     # no external → enable laptop screen
-    hyprctl keyword monitor "$INTERNAL,preferred,auto,1"
+    hyprctl keyword monitor "$INTERNAL,2560x1600@90,0x0,1.25"
 fi
