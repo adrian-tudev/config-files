@@ -4,7 +4,7 @@ position = "Top"
 [modules]
 left = [ "Workspaces", "Updates" ]
 center = [ "WindowTitle" ]
-right = [["KeyboardLayout", "SystemInfo"], ["Clock", "Privacy", "Settings"] ]
+right = [["KeyboardLayout", "SystemInfo"], ["Clock", "Privacy", "Tray", "Settings"] ]
 
 [updates]
 check_cmd = "checkupdates; yay -Qua"
