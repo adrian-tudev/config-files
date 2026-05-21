@@ -1,0 +1,10 @@
+[font]
+size = 18
+normal = { family = "UbuntuMono Nerd Font", style = "Regular" }
+
+[general]
+import = [
+    #"~/.config/alacritty/themes/themes/gruvbox_material_hard_dark.toml"
+    "~/.config/alacritty/custom/themes/gruvbox-LIGHT.toml"
+]
+
