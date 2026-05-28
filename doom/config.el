@@ -43,7 +43,6 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/Documents/org/")
 
-
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `with-eval-after-load' block, otherwise Doom's defaults may override your
 ;; settings. E.g.
@@ -74,3 +73,7 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+(after! pdf-tools
+  ;; Enable midnight mode automatically for PDFs
+  (add-hook 'pdf-view-mode-hook #'pdf-view-midnight-minor-mode))
