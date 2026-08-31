@@ -3,7 +3,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- package manager
-require("config.lazy")
+require("config.pack")
 
 -- keymaps
 require('config.keymaps')

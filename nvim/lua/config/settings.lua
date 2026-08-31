@@ -12,8 +12,8 @@ vim.opt.autoread = true
 vim.opt.swapfile = false
 vim.opt.showmode = false
 
-vim.o.background = 'light'
-vim.cmd([[colorscheme gruvbox]])
+vim.o.background = 'dark'
+vim.cmd([[colorscheme retrobox]])
 
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "python",
